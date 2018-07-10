@@ -37,7 +37,7 @@ class TopicsController extends Controller
 
         $topic->save();
 
-        return redirect()->route('topics.show', $topic->id)->with('message', 'Created success');
+        return redirect()->route('topics.show', $topic->id)->with('message', '成功创建话题');
     }
 
     public function show(Topic $topic)
