@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Reply;
+use App\Observers\ReplyObserver;
 use App\Observers\TopicObserver;
 use App\Models\Topic;
 use Carbon\Carbon;
@@ -18,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Carbon::setLocale('zh');
         Topic::observe(TopicObserver::class);
+        Reply::observe(ReplyObserver::class);
     }
 
     /**
