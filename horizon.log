@@ -4,3 +4,46 @@ Horizon started successfully.
 [2018-07-10 20:41:54] Processing: App\Jobs\TranslateSlug
 [2018-07-10 20:42:00] Processed:  App\Jobs\TranslateSlug
 Horizon started successfully.
+Horizon started successfully.
+[2018-07-30 15:37:36] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:37:36] Processed:  App\Notifications\TopicReplied
+[2018-07-30 15:42:52] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:42:52] Processed:  App\Notifications\TopicReplied
+[2018-07-30 15:44:55] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:47:37] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:47:41] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:47:43] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:47:44] Failed:     App\Notifications\TopicReplied
+[2018-07-30 15:49:59] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:50:01] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:50:02] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:50:03] Failed:     App\Notifications\TopicReplied
+[2018-07-30 15:51:18] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:51:20] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:51:21] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:51:24] Failed:     App\Notifications\TopicReplied
+[2018-07-30 15:52:34] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:52:35] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:52:36] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:52:38] Failed:     App\Notifications\TopicReplied
+Horizon started successfully.
+[2018-07-30 15:54:04] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:54:35] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:55:12] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:55:50] Failed:     App\Notifications\TopicReplied
+Horizon started successfully.
+[2018-07-30 15:56:37] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:56:38] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:56:38] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:56:39] Failed:     App\Notifications\TopicReplied
+Horizon started successfully.
+[2018-07-30 15:57:54] Processing: App\Notifications\TopicReplied
+[2018-07-30 15:57:56] Processed:  App\Notifications\TopicReplied
+[2018-07-30 16:03:33] Processing: App\Notifications\TopicReplied
+[2018-07-30 16:03:41] Processed:  App\Notifications\TopicReplied
+[2018-07-30 16:09:38] Processing: App\Notifications\TopicReplied
+[2018-07-30 16:09:40] Processed:  App\Notifications\TopicReplied
+[2018-07-30 16:10:08] Processing: App\Notifications\TopicReplied
+[2018-07-30 16:10:17] Processed:  App\Notifications\TopicReplied
+[2018-07-30 16:18:36] Processing: App\Notifications\TopicReplied
+[2018-07-30 16:18:36] Processed:  App\Notifications\TopicReplied
