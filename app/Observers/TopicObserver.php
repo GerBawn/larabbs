@@ -6,6 +6,7 @@ use App\Jobs\TranslateSlug;
 use App\Models\Topic;
 use function clean;
 use function dispatch;
+use Illuminate\Support\Facades\DB;
 
 class TopicObserver
 {
@@ -20,5 +21,10 @@ class TopicObserver
         if (!$topic->slug) {
             dispatch(new TranslateSlug($topic));
         }
+    }
+
+    public function deleted(Topic $topic)
+    {
+        DB::table('replies')->where('topic_id', $topic->id)->delete();
     }
 }

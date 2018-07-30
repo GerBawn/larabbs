@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\User;
 use App\Models\Reply;
+use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ReplyPolicy
@@ -12,6 +12,6 @@ class ReplyPolicy
 
     public function destroy(User $user, Reply $reply)
     {
-        return $user->id === $reply->user_id;
+        return $user->isAuthorOf($reply) || $user->isAuthorOf($reply->topic);
     }
 }
