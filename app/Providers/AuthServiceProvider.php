@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Laravel\Horizon\Horizon;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -12,11 +14,12 @@ class AuthServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $policies = [
-        \App\Models\User::class => \App\Policies\UserPolicy::class,
-        \App\Models\Topic::class => \App\Policies\TopicPolicy::class,
-        \App\Models\Reply::class => \App\Policies\ReplyPolicy::class,
-    ];
+    protected $policies
+        = [
+            \App\Models\User::class => \App\Policies\UserPolicy::class,
+            \App\Models\Topic::class => \App\Policies\TopicPolicy::class,
+            \App\Models\Reply::class => \App\Policies\ReplyPolicy::class,
+        ];
 
     /**
      * Register any authentication / authorization services.
@@ -27,6 +30,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        Horizon::auth(
+            function ($request) {
+                return Auth::user()->hasRole('Founder');
+            }
+        );
         //
     }
 }
